@@ -1,0 +1,21 @@
+extends layout
+block content
+    include includes/nav
+    div._container
+        div._form
+            div._form-header
+                h2 Register New Driver
+            form(action='new-driver', method='post')
+                div._form-body
+                    h3._label National ID
+                    input._form-input(type='number', name='nationalid', placeholder='National ID', min='0')
+                    h3._label First Name
+                    input._form-input(type='text', name='firstname', required)
+                    h3._label Last Name
+                    input._form-input(type='text', name='lastname', required)
+                    h3._label Email
+                    input._form-input(type='email', name='email' required, placeholder='Email Address')
+                    h3._label Phone Number
+                    input._form-input(type='tel', name='phonenumber', required, placeholder='Phone number')
+                div._action
+                    button._action-btn Register Driver

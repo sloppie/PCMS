@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  include includes/nav
+  div._container
+      div._form
+          div._form-header
+              h2 Register An Officer
+          form(method='post', action='/register')
+              div._form-body
+                    h3._label Officer Number
+                    input._form-input(type='text', name='officernumber', required, placeholder='Officer Number')
+                    h3._label First Name
+                    input._form-input(name='firstname', required, placeholder='John')
+                    h3._label Last Name
+                    input._form-input(type='text', name='lastname', required, placeholder='Onyancha')
+                    h3._label ID Number
+                    input._form-input(type='number', min='0', required, name='nationalid')
+                    h3._label Email Address
+                    input._form-input(type='email', name='email' id='email' required, placeholder='Email Address')
+                    h3._label Phone Number
+                    input._form-input(type='tel', required, placeholder='Phone Number', name='phonenumber')
+              div._action
+                  button(id='register-btn', class='_action-btn') Register
+
+
+

@@ -1,0 +1,28 @@
+nav(class='_nav')
+    span._brand PCMS
+    ul(class='_nav-items')
+        li(class='_nav-item')
+            a(href='/', class='_nav-link') Home
+        if $user === undefined || $user === null
+            li(class='_nav-item')
+                a(href='/auth', class='_nav-link') Login
+        else
+            li(class='_nav-item')
+                a(href='/vehicles', class='_nav-link') Vehicles
+            li(class='_nav-item')
+                a(href='/cases', class='_nav-link') Cases
+            li(class='_nav-item')
+                a(href='/drivers', class='_nav-link') Drivers
+            li(class='_nav-item')
+                a(href='/notifications', class='_nav-link') Notifications
+        if $user && $user.admin
+            li._nav-item
+                a._nav-link(href='/users') Officers
+        if $user
+            li._nav-item
+                a._nav-link(href='/logout') Logout
+        //li(class='_nav-item')
+        //    a(href='/about', class='_nav-link') About
+        //li(class='_nav-item')
+        //    a(href='/contact', class='_nav-link') Contact
+

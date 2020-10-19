@@ -1,0 +1,23 @@
+extends layout
+block content
+  include includes/nav
+  div._container
+      div._form
+          div._form-header
+              h2 Officer Login
+          form(method='post', action='/auth')
+              div._form-body
+                  if error
+                      p._text-danger= error
+                  h3._label Officer Number
+                  input._form-input(type='text', name='officernumber'  required, placeholder='Officer number')
+                  h3._label Password
+                  input._form-input(type='password', name='password' id='password', required)
+              div._action
+                  button._action-btn(id='login-btn') Login
+
+
+
+
+
+

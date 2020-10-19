@@ -1,0 +1,24 @@
+extends layout
+block content
+    include includes/nav.pug
+    div(class='_container')
+        div._form
+            div._form-header
+                h2 Register New vehicle
+            form(method='post', action='/new-vehicle')
+                div._form-body
+                    h3._label Vehicle Serial Number
+                    input._form-input(type='text', name='serial'  required, placeholder='Serial Number')
+                    h3._label Color
+                    input._form-input(type='text', name='color' , required)
+                    h3._label Sacco Name
+                    input._form-input(type='text', name='sacconame' , required)
+                    h3._label Seater Type
+                    input._form-input(type='text', name='seatertype' , required, placeholder='E.g 14 Seater')
+                    h3._label Choose Driver
+                    select._form-input
+                        option ---
+                        each driver in drivers
+                            option(value='')= driver.nationalid+' - '+ driver.firstname+' '+driver.lastname
+                div._action
+                     button._action-btn(id='addvehicle-btn') Add Vehicle

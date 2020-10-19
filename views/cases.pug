@@ -1,0 +1,27 @@
+extends layout
+block content
+    include includes/nav
+    div._container
+        h2 Registered Cases
+        div._text-right
+            a._action-btn(href='/new-case') Record Case
+        table
+            tr
+                th Reference Number
+                th Date
+                th Vehicle Involved
+                th Recorded By
+                th Description
+                th Level
+                th Route
+                th Status
+            each $case in cases
+                tr
+                    td= $case.casenumber
+                    td= $case.date
+                    td= $case.serial
+                    td= $case.officernumber
+                    td= $case.description
+                    td= $case.level
+                    td= $case.route
+                    td= $case.status

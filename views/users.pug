@@ -1,0 +1,29 @@
+extends layout
+block content
+    include includes/nav
+    div._container
+        h2 Registered Officers
+        div._text-right
+            a._action-btn(href='/register') Register Officer
+        table
+            tr
+                th Officer Number
+                th ID Number
+                th First Name
+                th Last Name
+                th Email
+                th Phone
+                th Admin
+            each user in users
+                tr
+                    td= user.officernumber
+                    td= user.nationalid
+                    td= user.firstname
+                    td= user.lastname
+                    td= user.email
+                    td= user.phonenumber
+                    if user.admin
+                        td Admin
+                    else
+                        td
+                            a(href='/make-admin?user='+user.officernumber) Make Admin

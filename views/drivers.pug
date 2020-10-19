@@ -1,0 +1,21 @@
+extends layout
+block content
+    include includes/nav
+    div._container
+        h2 Registered Drivers
+        div._text-right
+            a._action-btn(href='/new-driver') Register Driver
+        table
+            tr
+                th ID Number
+                th First Name
+                th Last Name
+                th Email
+                th Phone
+            each driver in drivers
+                tr
+                    td= driver.nationalid
+                    td= driver.firstname
+                    td= driver.lastname
+                    td= driver.email
+                    td= driver.phonenumber

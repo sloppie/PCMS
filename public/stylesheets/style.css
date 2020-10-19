@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+
+
+}
+
+._nav{
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+._brand{
+  font-size: 20px;
+}
+._nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+._nav ul li{
+  margin: 0px 10px;
+
+}
+._nav ul li a{
+  font-size: 18px;
+}
+._container{
+  padding: 50px;
+}
+._action-btn{
+  padding: 5px 10px;
+  background-color: #00B7FF;
+  border: none;
+  border-radius: 3px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+._form{
+  margin: 0 auto;
+  max-width: 450px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+._form-header{
+  background-color: black;
+  color: #00B7FF;
+  text-align: center;
+  padding: 10px 0px;
+  width: 100%;
+}
+._action{
+  text-align: center;
+  padding: 10px 0px;
+}
+._label{
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+._form-body{
+  padding: 10px;
+}
+
+._form-input{
+  width: 90%;
+  margin-bottom: 6px;
+  padding: 5px;
+}
+
+textarea._form-input{
+  height: 150px;
+}
+._text-right{
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+a._action-btn{
+  color: black;
+  text-decoration: none;
+}
+
+._text-danger {
+  color: red;
+  text-align: center;
+}

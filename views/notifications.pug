@@ -1,0 +1,27 @@
+extends layout
+block content
+    include includes/nav
+    div._container
+        h2 Available Notifications
+        div._text-right
+            a._action-btn(href='/notify') Post Notification
+        table
+            tr
+                th Date
+                th Message
+                th Route
+                th Posted By
+                if $user && $user.admin
+                    th Action
+            each notification in notifications
+                tr
+                    td= notification.date
+                    td= notification.message
+                    td= notification.route
+                    td= notification.officernumber
+                    if $user && $user.admin && !notification.approved
+                        td
+                            a(href='/approve?id='+notification.id) Approve
+                    else
+                        td Approved
+

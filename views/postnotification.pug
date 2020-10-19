@@ -1,0 +1,17 @@
+extends layout
+block content
+    include includes/nav
+    div._container
+        div._form
+            div._form-header
+                h2 Post Notification
+            form(action='/notify', method='post')
+                div._form-body
+                    h3._label Officer Number
+                    input._form-input(type='text', name='officernumber', value=$user.officernumber)
+                    h3._label Message
+                    textarea._form-input(col='10', row='5', name='message', required)
+                    h3._label Route
+                    input._form-input(type='text', name='route', placeholder='e.g Kisumu-Busia', required)
+                div._action
+                    button._action-btn Post Notification
