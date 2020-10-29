@@ -3,9 +3,9 @@ extends layout
 block content
   include includes/nav
   div._container
-      div._form
+      div._form.center
           div._form-header
-              h2 Register An Officer
+              h5 Register An Officer
           form(method='post', action='/register')
               div._form-body
                     h3._label Officer Number
@@ -21,7 +21,7 @@ block content
                     h3._label Phone Number
                     input._form-input(type='tel', required, placeholder='Phone Number', name='phonenumber')
               div._action
-                  button(id='register-btn', class='_action-btn') Register
+                  button.btn(id='register-btn', class='_action-btn') Register officer
 
 
 

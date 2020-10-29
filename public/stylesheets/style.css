@@ -2,23 +2,14 @@
   margin: 0;
   padding: 0;
 }
-
-
 a {
   color: #00B7FF;
   text-decoration: none;
-
-
 }
 
-._nav{
+.nav{
   background-color: black;
-  width: 100%;
-  padding: 20px;
   color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 ._brand{
   font-size: 20px;
@@ -41,11 +32,7 @@ a {
   padding: 50px;
 }
 ._action-btn{
-  padding: 5px 10px;
   background-color: #00B7FF;
-  border: none;
-  border-radius: 3px;
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 table {
@@ -119,5 +106,9 @@ a._action-btn{
 
 ._text-danger {
   color: red;
+  text-align: center;
+}
+
+input, select, textarea, option{
   text-align: center;
 }

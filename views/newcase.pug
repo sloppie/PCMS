@@ -2,26 +2,44 @@ extends layout
 block content
     include includes/nav
     div._container
-        div._form
+        div._form.center
             div._form-header
-                h2 Register New Case
+                h5 Register New Case
             form(action='new-case', method='post')
                 div._form-body
                     h3._label Case Reference Number
-                    input._form-input(type='text', name='casenumber', placeholder='Reference number', required)
+                    input._form-input.center(type='text', name='casenumber', placeholder='Reference number', required)
                     h3._label Vehicle Involved (Serial Number)
-                    input._form-input(type='text', name='serial', placeholder='Vehicle Serial Number', required)
+                    input._form-input.center(type='text', name='serial', placeholder='Vehicle Serial Number', required)
                     h3._label Description
                     textarea._form-input( name='description', required)
-                    h3._label Level
-                    select._form-input(name='level', required)
-                        option(value='1') Level 1
-                        option(value='2') Level 2
-                        option(value='3') Level 3
-                        option(value='4') Level 4
-                        option(value='5') Level 5
+                    h3._label Offence Class
+                    div
+                        p
+                            strong NOTE
+                            br
+                            span Offence points are rated with the seriousness of the offence committed.The ore the points, the serious the offence.
+
+                        label
+                            input(type='radio', name='level', value='1', checked=true)
+                            span 1
+                        label
+                            input(type='radio', name='level', value='2')
+                            span 2
+                        label
+                            input(type='radio', name='level', value='3')
+                            span 3
+                        label
+                            input(type='radio', name='level', value='4')
+                            span 4
+                        label
+                            input(type='radio', name='level', value='5')
+                            span 5
+                        label
+                            input(type='radio', name='level', value='6')
+                            span 6
                     h3._label Route
-                    input._form-input(type='text', name='route' required, placeholder='E.g Kisumu - Nairobi')
-                    input._form-input(type='text', name='officernumber', required, value=$user.officernumber, hidden)
+                    input._form-input.center(type='text', name='route' required, placeholder='E.g Kisumu - Nairobi')
+                    input._form-input.center(type='text', name='officernumber', required, value=$user.officernumber, hidden)
                 div._action
-                    button._action-btn Record Case
+                    button._action-btn.btn Record Case

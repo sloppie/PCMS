@@ -2,9 +2,9 @@ extends layout
 block content
     include includes/nav
     div._container
-        div._form
+        div._form.center
             div._form-header
-                h2 Register New Driver
+                h5 Register New Driver
             form(action='new-driver', method='post')
                 div._form-body
                     h3._label National ID
@@ -18,4 +18,4 @@ block content
                     h3._label Phone Number
                     input._form-input(type='tel', name='phonenumber', required, placeholder='Phone number')
                 div._action
-                    button._action-btn Register Driver
+                    button._action-btn.btn Register Driver

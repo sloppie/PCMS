@@ -2,9 +2,9 @@ extends layout
 block content
     include includes/nav.pug
     div(class='_container')
-        div._form
+        div._form.center
             div._form-header
-                h2 Register New vehicle
+                h5 Register New vehicle
             form(method='post', action='/new-vehicle')
                 div._form-body
                     h3._label Vehicle Serial Number
@@ -21,4 +21,4 @@ block content
                         each driver in drivers
                             option(value='')= driver.nationalid+' - '+ driver.firstname+' '+driver.lastname
                 div._action
-                     button._action-btn(id='addvehicle-btn') Add Vehicle
+                     button._action-btn.btn(id='addvehicle-btn') Add Vehicle

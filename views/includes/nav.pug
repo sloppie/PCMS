@@ -1,6 +1,19 @@
-nav(class='_nav')
-    span._brand PCMS
-    ul(class='_nav-items')
+nav(class='nav', role='navigation')
+    div.nav-wrapper
+        a(class='left button-collapse', href='#!', id='fake-menu')
+            i.material-icons menu
+        a(data-target='slide-out', class='sidenav-trigger', href='#!' id='real-menu')
+        a.brand-logo(class='center') PSV CRIME MANAGEMENT SYSTEM
+        if $user !== undefined && $user !== null
+            ul.right.hide-on-med-and-down
+                li
+                    strong= 'Logged in as '+ $user.officernumber
+
+    ul.sidenav(id='slide-out')
+        lig
+            div
+                h1 PCMS
+        div.divider
         li(class='_nav-item')
             a(href='/', class='_nav-link') Home
         if $user === undefined || $user === null
@@ -21,8 +34,4 @@ nav(class='_nav')
         if $user
             li._nav-item
                 a._nav-link(href='/logout') Logout
-        //li(class='_nav-item')
-        //    a(href='/about', class='_nav-link') About
-        //li(class='_nav-item')
-        //    a(href='/contact', class='_nav-link') Contact
 

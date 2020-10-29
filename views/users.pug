@@ -2,9 +2,9 @@ extends layout
 block content
     include includes/nav
     div._container
-        h2 Registered Officers
+        h5 Registered Officers
         div._text-right
-            a._action-btn(href='/register') Register Officer
+            a._action-btn.btn(href='/register') Register Officer
         table
             tr
                 th Officer Number
@@ -26,4 +26,4 @@ block content
                         td Admin
                     else
                         td
-                            a(href='/make-admin?user='+user.officernumber) Make Admin
+                            a.btn-small(href='/make-admin?user='+user.officernumber) Make Admin

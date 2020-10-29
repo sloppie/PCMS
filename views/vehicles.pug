@@ -2,10 +2,10 @@ extends layout
 block content
     include includes/nav
     div._container
-        h2 Registered Vehicles
+        h5 Registered Vehicles
         div._text-right
-            a._action-btn(href='/new-vehicle') Register Vehicle
-        table
+            a._action-btn.btn(href='/new-vehicle') Register Vehicle
+        table.highlight
             tr
                 th Serial Number
                 th Seater Type
