@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2971b83e-2a39-4778-a6b8-b4100fab2452" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/materialize/css/materialize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/materialize/css/materialize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/materialize/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/materialize/js/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/materialize/js/materialize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/materialize/js/materialize.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wamburu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wamburu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/addvehicle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/addvehicle.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/cases.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/cases.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/drivers.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/drivers.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/includes/nav.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/nav.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/newcase.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/newcase.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/newdriver.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/newdriver.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/notifications.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/notifications.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/postnotification.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/postnotification.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/register.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/users.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/vehicles.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/vehicles.pug" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +101,7 @@
       <workItem from="1596265568696" duration="16000" />
       <workItem from="1596265715983" duration="620000" />
       <workItem from="1603136891148" duration="4409000" />
-      <workItem from="1603891350207" duration="14174000" />
+      <workItem from="1603891350207" duration="14647000" />
     </task>
     <servers />
   </component>
