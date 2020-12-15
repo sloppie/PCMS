@@ -31,6 +31,8 @@ nav(class='nav', role='navigation')
         if $user && $user.admin
             li._nav-item
                 a._nav-link(href='/users') Officers
+            li._nav-item
+                a._nav-link(href='/reports') Reports
         if $user
             li._nav-item
                 a._nav-link(href='/logout') Logout

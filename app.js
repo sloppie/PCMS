@@ -21,6 +21,7 @@ const casesRouter = require('./routes/cases');
 const logoutRouter = require('./routes/logout');
 const approveNotificationRouter = require('./routes/approvenotification');
 const makeAdminRouter = require('./routes/make-admin');
+const reportsRouter = require('./routes/reports');
 
 const app = express();
 
@@ -53,6 +54,7 @@ app.use('/notifications', notificationsRouter);
 app.use('/logout', logoutRouter);
 app.use('/approve', approveNotificationRouter);
 app.use('/make-admin',makeAdminRouter );
+app.use('/reports',reportsRouter );
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
