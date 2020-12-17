@@ -23,7 +23,11 @@ router.post('/', function (req, res, next) {
     const data = req.body;
     db.recordExists('vehicles', 'serial', data.serial, function (result) {
         if(result){
-            res.send('The car serial is already used.');
+            //res.send('The car serial is already used.');
+            return res.send(`<script>
+                        alert('The car serial is already used.')
+                        window.location.href = '/new-vehicle';
+                </script> `);
             return;
         }
         var sql = `
@@ -33,6 +37,11 @@ router.post('/', function (req, res, next) {
         `;
         db.execute(sql, function (result) {
            res.send('Vehicle registered.');
+
+            return res.send(`<script>
+                        alert('Vehicle registered.');
+                        window.location.href = '/vehicles';
+                </script> `);
         });
     });
 });

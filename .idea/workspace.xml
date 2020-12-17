@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2971b83e-2a39-4778-a6b8-b4100fab2452" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/materialize/js/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/materialize/js/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/materialize/js/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/materialize/js/reports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/cases.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/cases.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/drivers.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/drivers.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/nav.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/nav.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/notifications.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/notifications.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/reports.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/reports.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/users.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/vehicles.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/vehicles.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/addvehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/addvehicle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/date-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/date-service.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +104,8 @@
       <workItem from="1603136891148" duration="4409000" />
       <workItem from="1603891350207" duration="14647000" />
       <workItem from="1607968071640" duration="7608000" />
-      <workItem from="1608171814931" duration="4785000" />
+      <workItem from="1608171814931" duration="6155000" />
+      <workItem from="1608193969669" duration="1261000" />
     </task>
     <servers />
   </component>
