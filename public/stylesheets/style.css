@@ -112,3 +112,17 @@ a._action-btn{
 input, select, textarea, option{
   text-align: center;
 }
+
+#search_box{
+  color: white;
+}
+.nav_brand{
+  color: #00B7FF;
+}
+
+li strong{
+  margin-right: 20px;
+}
+.d-none{
+  display: none;
+}

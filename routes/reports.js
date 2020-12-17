@@ -23,7 +23,7 @@ router.post('/', function (req, res, next) {
     if (req.body.data == 'cases') {
          sql = 'select vehicles.sacconame as sacco, count(cases.casenumber) as cases from vehicles inner join cases on vehicles.serial = cases.serial group by vehicles.sacconame';
     }else {
-
+        sql = 'select * from cases ';
     }
 
     if (!req.session.user || !req.session.user.admin) {

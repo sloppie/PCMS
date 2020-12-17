@@ -7,12 +7,14 @@ nav(class='nav', role='navigation')
         if $user !== undefined && $user !== null
             ul.right.hide-on-med-and-down
                 li
+                    input(type='search', id='search_box', placeholder='Search ')
+                li
                     strong= 'Logged in as '+ $user.officernumber
 
     ul.sidenav(id='slide-out')
         li
             div
-                h1 PCMS
+                h1.nav_brand PCMS
         div.divider
         li(class='_nav-item')
             a(href='/', class='_nav-link') Home

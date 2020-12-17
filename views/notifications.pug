@@ -14,7 +14,7 @@ block content
                 if $user && $user.admin
                     th Action
             each notification in notifications
-                tr
+                tr.data_row
                     td= notification.date
                     td= notification.message
                     td= notification.route
