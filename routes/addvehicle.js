@@ -36,7 +36,7 @@ router.post('/', function (req, res, next) {
             ('${data.serial}', '${data.color}', '${data.seatertype}','${data.sacconame}')
         `;
         db.execute(sql, function (result) {
-           res.send('Vehicle registered.');
+          // res.send('Vehicle registered.');
 
             return res.send(`<script>
                         alert('Vehicle registered.');
